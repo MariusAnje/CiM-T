@@ -55,7 +55,7 @@ def get_cifar10(shuffle=True, batch_size=64, augment=False):
         ])
     trainloader = DataLoader(
         datasets.CIFAR10(
-            root='./data/CIFAR10',
+            root='~/Private/data/CIFAR10',
             train=True,
             download=True,
             transform=train_transform
@@ -67,7 +67,7 @@ def get_cifar10(shuffle=True, batch_size=64, augment=False):
     )
     valloader = DataLoader(
         datasets.CIFAR10(
-            root='./data/CIFAR10',
+            root='~/Private/data/CIFAR10',
             train=False,
             download=True,
             transform=val_transform
